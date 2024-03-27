@@ -12,7 +12,7 @@ async function bootstrap() {
   );
   app.setGlobalPrefix('api');
   app.enableCors({
-    origin: 'https://edemflowershop.vercel.app',
+    origin: true,
     credentials: true,
   });
   app.use(cookieParser());
