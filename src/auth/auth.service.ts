@@ -72,8 +72,6 @@ export class AuthService {
       httpOnly: true,
     });
 
-    localStorage.setItem('item', 'item1');
-
     return res.send({ message: 'Logged in successfully' });
   }
 
