@@ -70,6 +70,7 @@ export class AuthService {
       sameSite: 'none',
       secure: true,
       domain: 'edemflowershop.vercel.app',
+      httpOnly: true,
     });
 
     return res.send({ message: 'Logged in successfully' });
