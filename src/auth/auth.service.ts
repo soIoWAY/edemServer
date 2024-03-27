@@ -69,7 +69,7 @@ export class AuthService {
       maxAge: 25 * 60 * 1000,
       sameSite: 'none',
       secure: true,
-      domain: 'https://edemflowershop.vercel.app/',
+      domain: 'edemflowershop.vercel.app',
     });
 
     return res.send({ message: 'Logged in successfully' });
