@@ -68,9 +68,8 @@ export class AuthService {
     res.cookie('token', token, {
       maxAge: 25 * 60 * 1000,
       sameSite: 'none',
-      secure: true,
-      path: '/',
-      domain: '.vercel.app',
+      secure: false,
+      domain: 'edemflowershop.vercel.app',
       httpOnly: true,
     });
 
