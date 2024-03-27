@@ -70,7 +70,7 @@ export class AuthService {
       sameSite: 'none',
       secure: true,
       path: '/',
-      domain: 'edemflowershop.vercel.app',
+      domain: '.vercel.app',
       httpOnly: true,
     });
 
