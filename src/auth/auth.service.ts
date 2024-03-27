@@ -69,6 +69,7 @@ export class AuthService {
       maxAge: 25 * 60 * 1000,
       sameSite: 'none',
       secure: true,
+      domain: 'https://edem-server-two.vercel.app/api/',
     });
 
     return res.send({ message: 'Logged in successfully' });
