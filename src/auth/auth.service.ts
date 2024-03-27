@@ -69,7 +69,7 @@ export class AuthService {
       maxAge: 25 * 60 * 1000,
       sameSite: 'none',
       secure: true,
-      httpOnly: false,
+      httpOnly: true,
     });
 
     return res.send({ message: 'Logged in successfully' });
