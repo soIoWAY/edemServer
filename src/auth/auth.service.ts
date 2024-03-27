@@ -69,7 +69,6 @@ export class AuthService {
       maxAge: 25 * 60 * 1000,
       sameSite: 'none',
       secure: true,
-      domain: 'edemflowershop.vercel.app',
       httpOnly: true,
     });
 
