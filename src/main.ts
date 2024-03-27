@@ -13,6 +13,15 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
   app.enableCors({
     origin: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: [
+      'Content-Type',
+      'Origin',
+      'X-Requested-With',
+      'Accept',
+      'Authorization',
+    ],
+    exposedHeaders: ['Authorization'],
     credentials: true,
   });
   app.use(cookieParser());
