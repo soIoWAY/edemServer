@@ -65,10 +65,14 @@ export class AuthService {
       throw new ForbiddenException();
     }
 
-    res.cookie('token', token, {
-      maxAge: 25 * 60 * 1000,
-      sameSite: 'none',
-    });
+    // res.cookie('token', token, {
+    //   maxAge: 25 * 60 * 1000,
+    //   sameSite: 'none',
+    //   httpOnly: true,
+    //   secure: true,
+    // });
+
+    res.setHeader('Authorization', `Bearer ${token}`);
 
     return res.send({ message: 'Logged in successfully' });
   }
